@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'screen/Device.dart';
+import 'screen/device.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,16 +13,16 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Poppins',
+        // fontFamily: 'Poppins',
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.amber.shade100,
+        scaffoldBackgroundColor: Colors.blueAccent,
         primarySwatch: Colors.teal,
       ),
-      // home: Scaffold(
-      //   body: Center(
-      //     // child: DeviceScreen(),
-      //   ),
-      // ),
+      home: Scaffold(
+        body: Center(
+          child: DeviceScreen(),
+        ),
+      ),
     );
   }
 }
